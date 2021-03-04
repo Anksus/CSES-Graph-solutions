@@ -3,6 +3,11 @@
 // so that they can be collected back at 1st node.
 
 //  act[mxN] is for detecting cycle, just a bellman ford stuff.
+
+// There are 2 approach to solve this problem (according to my knowledge).
+// 1. Traditional BFS (gives TLE for large N)
+// 2. DP (works like a charm)
+
 #include <bits/stdc++.h>
 using namespace std;
  
