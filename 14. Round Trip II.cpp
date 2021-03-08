@@ -1,8 +1,5 @@
-
-// video link to understand the solution. https://www.youtube.com/watch?v=rKQaZuoUR4M
-// We have to detect a cycle in a directed graph.
-
-
+// Detecting cycle in an undirected graph
+// resource https://www.youtube.com/watch?v=rKQaZuoUR4M&t=319s
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -31,7 +28,7 @@ const int N = 100031;
 bool bad = false;
 std::vector<int>a[N],par(N,0),vis(N,0);
 bool act[mxN]; 
-
+ 
 void dfs(int u,int pu){
     par[u] = pu;
     vis[u]=1;
@@ -60,7 +57,7 @@ void dfs(int u,int pu){
     }
     act[u]=0;
 }
-
+ 
 void solve(){
     int n,m;
     cin>>n>>m;
@@ -75,8 +72,8 @@ void solve(){
     }
     cout<<"IMPOSSIBLE";
 }
-
-
+ 
+ 
 int main(){
     IOS;
     solve();
