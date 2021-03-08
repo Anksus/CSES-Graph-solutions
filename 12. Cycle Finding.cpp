@@ -61,7 +61,7 @@ void solve(){
     int x;
     rep(i,0,n){
         x = 0;
-        for(auto [a,b,w]: e){
+        for(auto [a,b,w]: e){     // destructuring c++17 feature
             if(dis1[b]>dis1[a]+w){
                 dis1[b] = dis1[a] +w;
                 par[b] = a;
