@@ -78,6 +78,10 @@ void solve(){
             cycle.pb(v);
             if(cycle.size()>1 && v==y)break;
         }
+//         reverse(all(cycle));
+//         for(auto xx: cycle){
+//             cout<<xx<<" ";
+//         }
         reverse(all(cycle));
         for(auto xx: cycle){
             cout<<xx<<" ";
