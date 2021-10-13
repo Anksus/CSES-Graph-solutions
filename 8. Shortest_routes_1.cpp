@@ -59,7 +59,14 @@ void solve(){
         int dis_v = pq.top().first;
         pq.pop();
         if(dis_v!=dis[v])continue;
-        for(auto x: g[v]){
+//         for(auto x: g[v]){
+//             int len = x.second; int to = x.first;
+//             if(dis_v + len < dis[to]){
+//                 dis[to] = dis_v + len;
+//                 pq.push({dis[to],to});
+//             }
+//         }
+     for(auto x: g[v]){
             int len = x.second; int to = x.first;
             if(dis_v + len < dis[to]){
                 dis[to] = dis_v + len;
