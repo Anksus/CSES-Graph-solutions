@@ -19,11 +19,18 @@ void solve() {
     cin >> n >> m;
     vector<vector<char>>a(n, vector<char>(m, 0));
     vector<vector<int>>vis(n, vector<int>(m, 0));
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            cin >> a[i][j];
-        }
-    }
+//     for (int i = 0; i < n; i++) {
+//         for (int j = 0; j < m; j++) {
+//             cin >> a[i][j];
+//         }
+//     }
+ for(int i=0;i<n;i++)
+ {
+  for(int j=0;j<m;j++)
+  {
+   cin>>a[i][j];
+  }
+ }
     int ans = 0;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
