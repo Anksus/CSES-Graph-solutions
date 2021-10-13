@@ -14,14 +14,19 @@ bool vis[MN];
 int rep[MN];
 int n, m;
  
+// void dfs(int v) {
+//     vis[v] = true;
+//     for (auto x : g[v]) {
+//         if (!vis[x])dfs(x);
+//     }
+// }
 void dfs(int v) {
     vis[v] = true;
     for (auto x : g[v]) {
         if (!vis[x])dfs(x);
     }
 }
- 
-int count_component() {
+ int count_component() {
     int cnt = 0;
     for (int i = 1; i <= n; i++) {
         if (!vis[i]) {
@@ -31,6 +36,16 @@ int count_component() {
     }
     return cnt;
 }
+// int count_component() {
+//     int cnt = 0;
+//     for (int i = 1; i <= n; i++) {
+//         if (!vis[i]) {
+//             rep[cnt++] = i;
+//             dfs(i);
+//         }
+//     }
+//     return cnt;
+// }
  
 void solve() {
     // int n, m;
