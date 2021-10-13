@@ -53,8 +53,10 @@ bool isEscape(int x,int y,int timer){
  
 bool bfs_for_player(){
     
+//     queue<pair<pii,int>>q;
     queue<pair<pii,int>>q;
     q.push(make_pair(start,0));
+ q.push(make_pair(start,0));
     while(!q.empty()){
         auto p = q.front(); q.pop();
         int i = p.first.first, j = p.first.second;
