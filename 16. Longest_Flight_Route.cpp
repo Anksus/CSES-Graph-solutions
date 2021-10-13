@@ -20,8 +20,8 @@ using namespace std;
 #define nl '\n'
 #define all(x) x.begin(),x.end() 
 #define map_traverse(it,x)  for(auto it = BN(x); it!= ED(x); it++)
-#define debug(x) for(auto y : x) {cout<<y<<" ";} cout<<nl;
-#define PI 3.14159265358979323846264338327950L
+// #define debug(x) for(auto y : x) {cout<<y<<" ";} cout<<nl;
+// #define PI 3.14159265358979323846264338327950L
 #define rep(i,a,b) for(int i=a;i<b;i++)
 #define per(i,n) for(int i=n-1;i>=0;i--)
 #define vi vector<int>
