@@ -37,7 +37,9 @@ int main() {
 		}
 	}
  
+// 	q.push(begin);
 	q.push(begin);
+// 	vis[begin.f][begin.s] = true;
 	vis[begin.f][begin.s] = true;
  
 	while (!q.empty()) {
