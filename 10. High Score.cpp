@@ -42,6 +42,17 @@ vi adj[2505],adj2[2505];
 int dis[2505];
 bool  vis[2505],vis2[2505];
  
+// void dfs(int v){
+//     if(vis[v])return;
+//     vis[v]=1;
+//     for(auto x: adj[v] )dfs(x);
+// }
+ 
+// void dfs2(int v){
+//     if(vis2[v])return;
+//     vis2[v]=1;
+//     for(auto x: adj2[v])dfs2(x);
+// }
 void dfs(int v){
     if(vis[v])return;
     vis[v]=1;
